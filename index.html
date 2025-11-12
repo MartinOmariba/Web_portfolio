@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang=""en>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" contect=""width=device-width, initial-scale="1.0">
+    <title>Martin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f03b94ddc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id ="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo.png" class="logo">
+
+             <!--  Added id="sidemenu" and onclick handlers -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software, Networks, Security.</p>
+            <h1>Hi, I,m <span>Martin</span><br>Building networks. Securing systems. Automating everything.</h1>
+        </div>
+    </div>
+    <!-- Your small overlay image -->
+  <img src="images/mar.jpg" alt="Martin" class="profile-image">
+</div>
+<!---------------About---------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="images/marts.jpg">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated Network Engineer, NetDevOps Specialist,
+                  SOC Analyst, and Programmer with a passion for building secure, 
+                  scalable, and automated network infrastructures. With expertise 
+                  in network design, security operations, and automation, 
+                  I bridge the gap between traditional networking and modern 
+                  DevOps practices. My skills in programming enhance my ability 
+                  to develop customized solutions that optimize performance and 
+                  security. Always eager to tackle complex challenges, 
+                  I thrive in dynamic environments where innovation and efficiency 
+                  drive success</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                       <li><span>Network Design<br>Designing efficient, scalable, and secure network infrastructures.</span></li>
+                       <li><span>Cybersecurity Analysis<br>Identifying threats, analyzing risks, and defending systems.</span></li> 
+                       <li><span>Software Development<br>Building reliable, automated, and intelligent software solutions.</span></li>
+                       <li><span>Web Development<br>Creating dynamic, secure, and responsive web applications.</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                       <li><span>2025-Current<br>Team Lead at Curium-Tech</span></li> 
+                       <li><span>2023-2024<br>Clerk at Armphib Holdings</span></li> 
+                       <li><span>2019-2022<br>Clerk at Security Group Africa</span></li>
+                       <li><span>2016-2018<br>Security personel at Texas Alarms</span></li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                       <li><span>2025-Current<br>BCS from UoPEOPLE</span></li> 
+                       <li><span>2024<br>Api Security training at ApiSec University</span></li>
+                       <li><span>2025-Current<br>BLue Tean Junior Analyst at Securityblueteam</span></li> 
+                       <li><span>2024<br>Ethical Hacker at Cisco Networking Academy</span></li>
+                       <li><span>2024<br>Network Technician at Cisco Networking Academy</span></li>
+                       <li><span>2023<br>Wireshark Packet Analysis at Udemy</span></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-----------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>NetDevOps</h2> 
+                <p>Enabling efficient, automated network management 
+                  through Carium-Tech high-performance solutions. NetDevOps 
+                  combines modern automation, monitoring, and orchestration 
+                  tools to streamline network operations, enhance reliability, 
+                  and empower businesses with scalable, secure, and optimized 
+                  network infrastructures.</p> 
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>NetworkEngineer</h2> 
+                <p>Delivering fast, reliable internet to underserved 
+                  communities in Kenya through Carium-Tech high-speed
+                  internet services. Using innovative wireless and fiber
+                  technology, we provide unlimited data, secure connections,
+                  and seamless access for homes and businesses.</p> 
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>SoftwareDeveloper</h2> 
+                <p>Developing software and firmware for networking devices to
+                  optimize performance, security, and reliability. Creating 
+                  automation tools and management solutions that streamline 
+                  network operations and improve connectivity for businesses 
+                  and end-users.</p> 
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>ApiSecurity</h2> 
+                <p>Providing expert API security solutions, including threat
+                   assessment, vulnerability testing, and endpoint protection.
+                   Ensuring your applications and services communicate safely,
+                   reliably, and efficiently while minimizing risks and 
+                   strengthening overall system security.</p> 
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>SecurityPolicy and Compliance</h2> 
+                <p>Assisting organizations in implementing security policies, procedures,
+                  and compliance frameworks. Ensuring systems meet industry standards 
+                  and regulatory requirements while maintaining a robust cybersecurity 
+                  posture.</p> 
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-shield"></i>
+                <h2>VulnerabilityAssessment</h2> 
+                <p>Conducting regular security assessments to identify vulnerabilities
+                   and risks within networks and systems. Providing actionable 
+                   insights and recommendations to strengthen defenses and prevent 
+                   potential cyberattacks.</p> 
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<!-------------Portfolio----------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.jpg" alt="Project 1">
+        <div class="layer">
+          <h3>SecOps / Cybersecurity Services</h3>
+          <p>I implement security policies, conduct vulnerability assessments, 
+            configure access lists, monitor logs, and manage firewalls and IDS/IPS
+            systems to safeguard networks and endpoints. I also perform penetration 
+            testing, security auditing, incident response, endpoint protection, and 
+            continuous risk assessment to ensure robust and proactive cybersecurity 
+            for organizations."
+          </p>
+          <a href="https://github.com/MartinOmariba/Splunk"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-2.jpg" alt="Project 2">
+        <div class="layer">
+          <h3>Wifi & Networking Supplier</h3>
+          <p>I provide budget-friendly networking solutions, including routers,
+            access points, and switches, along with installation and optimization 
+            for homes and small offices."</p>
+          <a href="https://github.com/MartinOmariba/packet_tracer_ccna"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-3.jpg" alt="Project 3">
+        <div class="layer">
+          <h3>Blog Writer (Medium / Tech Content)</h3>
+          <p>I write technical tutorials, industry insights, and case studies on 
+            networking, cybersecurity, and automation to help professionals and 
+            enthusiasts learn and stay updated</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-4.jpg" alt="Project 4">
+        <div class="layer">
+          <h3>Soc Analyst</h3>
+          <p>I monitor, detect, and respond to security threats in real-time, 
+            leveraging OSINT, digital forensics, network analysis, threat hunting, 
+            and vulnerability management, while implementing security policies, 
+            conducting vulnerability assessments, and managing firewalls and 
+            IDS/IPS systems to safeguard networks, endpoints, and critical IT 
+            systems from cyberattacks."</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-5.jpg" alt="Project 5">
+        <div class="layer">
+          <h3>Network Automation Specialist</h3>
+          <p>I automate network deployment, configuration, and monitoring using modern 
+             tools and APIs—demonstrated in my project ‘quokka‑prime‑from‑scratch’ 
+             where I built end‑to‑end automation for device provisioning, real‑time 
+             monitoring, and workflow orchestration—reducing manual errors and 
+             improving operational efficiency.”</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-6.jpg" alt="Project 6">
+        <div class="layer">
+          <h3>Web Development & Digital Projects</h3>
+          <p>I design and develop responsive websites, web applications, 
+            and interactive digital experiences, combining clean code, modern 
+            frameworks, and user-focused design to deliver functional and visually 
+            appealing online solutions."</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+    </div> 
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+
+<!-----------------contact------------->
+<!-----------------contact------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+
+        <p><i class="fa-solid fa-square-envelope"></i>martimukema@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+254 742518546</p>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/martin.mukema"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://medium.com/@martinomar"><i class="fa-brands fa-medium"></i></a>
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/martin-mukema/"><i class="fa-brands fa-square-linkedin"></i></a>
+        </div>
+
+        <div>
+          <a href="images/my_cv.docx" download class="btn btn2">Download Cv</a>
+        </div>
+      </div>
+
+      
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>Copyright@Curium-Tech. Made by <i class="fa-solid fa-copyright"></i> Martin</p>
+  </div>
+</div>
+
+
+
+
+<!----------display tabs/active link disp colour/-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxRjvcbb4utroHgL-8oMMibGy7PJ8jVaBtY2cCxveTQEn3bKX1IZkoO_IzFN-oDJb-k/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function() {
+          msg.innerHTML = ""
+        }, 5000)  
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+    let sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+</body>
+
+</html>
